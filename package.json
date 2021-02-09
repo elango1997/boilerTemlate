@@ -1,0 +1,74 @@
+{
+  "author": "Girma Nigusse <xgirma@gmail.com>",
+  "ava": {
+    "babel": true
+  },
+  "bugs": {
+    "url": "https://github.com/e2e-boilerplate/selenium-webdriver-es-modules-babel-ava/issues"
+  },
+  "dependencies": {
+    "ava": "3.13.0",
+    "chromedriver": "85.0.1",
+    "selenium-webdriver": "4.0.0-alpha.7",
+    "webdriver-manager": "12.1.7"
+  },
+  "description": "Selenium-WebDriver end-to-end test automation boilerplate. Using ES Modules, Babel and AVA.",
+  "devDependencies": {
+    "@ava/babel": "1.0.1",
+    "@babel/cli": "7.12.8",
+    "@babel/core": "7.12.9",
+    "@babel/plugin-transform-runtime": "7.12.1",
+    "@babel/preset-env": "7.12.7",
+    "@babel/register": "7.12.1",
+    "@babel/runtime": "7.12.5",
+    "eslint": "7.14.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "7.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "husky": "4.3.0",
+    "lint-staged": "10.5.2",
+    "prettier": "2.2.1",
+    "pretty-quick": "3.1.0"
+  },
+  "homepage": "https://github.com/e2e-boilerplate/selenium-webdriver-es-modules-babel-ava#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "keywords": [
+    "ava",
+    "babel",
+    "es modules",
+    "selenium",
+    "selenium-webdriver",
+    "selenium-webdriver automation",
+    "selenium-webdriver boilerplate",
+    "selenium-webdriver example",
+    "webdriver manager",
+    "e2e",
+    "e2e tests",
+    "boilerplate",
+    "integration test",
+    "test automation",
+    "javascript"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "name": "selenium-webdriver-es-modules-babel-ava",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplate/selenium-webdriver-es-modules-babel-ava.git"
+  },
+  "scripts": {
+    "lint": "npx eslint --ext .js ./ --fix",
+    "test": "npx ava --timeout=1m"
+  },
+  "version": "1.0.0"
+}
